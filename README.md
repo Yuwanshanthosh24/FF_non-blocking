@@ -22,7 +22,7 @@ Verify that outputs match the truth table.
 Save results and capture simulation screenshots.
 # VERILOG CODE
 SR Flip-Flop (Non Blocking)
-
+'''
 `timescale 1ns / 1ps
 
 module sr_ff(S,R,clk,rst,Q);
@@ -43,7 +43,7 @@ else
      end
 end
 endmodule
-
+'''
 SR Flip-Flop Test bench
 
 `timescale 1ns / 1ps
