@@ -22,7 +22,7 @@ Verify that outputs match the truth table.
 Save results and capture simulation screenshots.
 # VERILOG CODE
 SR Flip-Flop (Non Blocking)
-'''
+```
 `timescale 1ns / 1ps
 
 module sr_ff(S,R,clk,rst,Q);
@@ -43,9 +43,9 @@ else
      end
 end
 endmodule
-'''
+```
 SR Flip-Flop Test bench
-
+```
 `timescale 1ns / 1ps
 
 module sr_ff_tb;
@@ -77,14 +77,14 @@ $finish;
 end
 always #5 clk = ~clk;
 endmodule
-
+```
 
 SIMULATION OUTPUT
 <img width="1512" height="834" alt="image" src="https://github.com/user-attachments/assets/1d89cd0a-d5aa-484f-990f-e3b0b3e9c266" />
 
 
 JK Flip-Flop (Non Blocking)
-
+```
 `timescale 1ns / 1ps
 
 module jk_ff(J,K,clk,rst,Q);
@@ -105,9 +105,9 @@ else
     end
 end
 endmodule
-
+```
 JK Flip-Flop Test bench
-
+```
 timescale 1ns / 1ps
 
 module jk_ff_tb;
@@ -139,13 +139,13 @@ $finish;
 end
 always #5 clk = ~clk;
 endmodule
-
+```
 SIMULATION OUTPUT
 <img width="1512" height="831" alt="image" src="https://github.com/user-attachments/assets/06b8022e-398b-44a8-90a6-070a26a485a1" />
 
 
 D Flip-Flop (Non Blocking)
-
+```
 timescale 1ns / 1ps
 
 module d_ff(D,clk,rst,Q);
@@ -159,9 +159,9 @@ else
     Q<=D;
 end
 endmodule
-
+```
 D Flip-Flop Test bench
-
+```
 `timescale 1ns / 1ps
 
 module d_ff_tb;
@@ -183,13 +183,13 @@ $finish;
 end
 always #5 clk= ~clk;
 endmodule
-
+```
 SIMULATION OUTPUT
 <img width="1512" height="831" alt="image" src="https://github.com/user-attachments/assets/059b357c-a669-4853-8cae-9a5bf9d30708" />
 
 
 T Flip-Flop (Non Blocking)
-
+```
 timescale 1ns / 1ps
 
 module t_ff(T,clk,rst,Q);
@@ -205,9 +205,9 @@ else
     Q <= ~Q;
 end
 endmodule
-
+```
 T Flip-Flop Test bench
-
+```
 timescale 1ns / 1ps
 
 module t_ff_tb;
@@ -230,7 +230,7 @@ $finish;
 end
 always #5 clk = ~clk;
 endmodule
-
+```
 SIMULATION OUTPUT
 <img width="997" height="543" alt="image" src="https://github.com/user-attachments/assets/593cfd43-1731-4532-8f9a-edec6c54de0e" />
 
